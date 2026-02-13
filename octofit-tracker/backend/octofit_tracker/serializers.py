@@ -4,13 +4,26 @@ from .models import User, Team, Activity, Leaderboard, Workout
 
 class UserSerializer(serializers.ModelSerializer):
     id = serializers.SerializerMethodField()
+    username = serializers.CharField(source='name')
+    date_joined = serializers.DateTimeField(source='created_at')
+    team_name = serializers.SerializerMethodField()
     
     class Meta:
         model = User
-        fields = ['id', 'name', 'email', 'team_id', 'total_points', 'created_at']
+        fields = ['id', 'name', 'username', 'email', 'team_id', 'team_name', 'total_points', 'created_at', 'date_joined']
     
     def get_id(self, obj):
         return str(obj._id)
+    
+    def get_team_name(self, obj):
+        if obj.team_id:
+            try:
+                from bson import ObjectId
+                team = Team.objects.get(_id=ObjectId(obj.team_id))
+                return team.name
+            except (Team.DoesNotExist, Exception):
+                return None
+        return None
 
 
 class TeamSerializer(serializers.ModelSerializer):

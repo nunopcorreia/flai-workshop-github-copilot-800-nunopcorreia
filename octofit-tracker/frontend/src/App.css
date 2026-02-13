@@ -1,0 +1,364 @@
+/* OctoFit Tracker Custom Styles */
+
+/* General App Container */
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #2d3748;
+}
+
+/* Custom Navbar Styling */
+.navbar {
+  background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%) !important;
+  box-shadow: 0 4px 6px rgba(0,0,0,.3);
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+}
+
+.navbar-nav .nav-link {
+  color: #cbd5e0 !important;
+  font-weight: 500;
+  margin: 0 0.5rem;
+  transition: all 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fff !important;
+  border-bottom-color: #667eea;
+  transform: translateY(-2px);
+}
+
+/* Card Enhancements */
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: #ffffff;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,.25);
+}
+
+.card-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: bold;
+  font-size: 1.25rem;
+  border-radius: 15px 15px 0 0 !important;
+  padding: 1rem 1.5rem;
+}
+
+/* Table Enhancements */
+.table {
+  margin-bottom: 0;
+  color: #2d3748;
+}
+
+.table thead th {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-bottom: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  padding: 1rem;
+}
+
+.table-hover tbody tr:hover {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.15) 100%);
+  cursor: pointer;
+}
+
+.table tbody td {
+  padding: 1rem;
+  vertical-align: middle;
+}
+
+/* Badge Styling */
+.badge {
+  padding: 0.5em 1em;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-radius: 20px;
+}
+
+.badge-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.badge-success {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+.badge-warning {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+/* Button Enhancements */
+.btn {
+  border-radius: 25px;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  transition: all 0.3s;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.btn-outline-primary {
+  border: 2px solid #667eea;
+  color: #667eea;
+  background: transparent;
+}
+
+.btn-outline-primary:hover {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  box-shadow: 0 4px 15px rgba(17, 153, 142, 0.4);
+}
+
+.btn-success:hover {
+  background: linear-gradient(135deg, #38ef7d 0%, #11998e 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(17, 153, 142, 0.6);
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  box-shadow: 0 4px 15px rgba(245, 87, 108, 0.4);
+}
+
+.btn-danger:hover {
+  background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(245, 87, 108, 0.6);
+}
+
+/* Loading Spinner Container */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+/* Alert Enhancements */
+.alert {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+/* Welcome Section */
+.welcome-section {
+  background: linear-gradient(135deg, #ffffff 0%, #f7fafc 100%);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 10px 40px rgba(0,0,0,.15);
+  margin-top: 2rem;
+}
+
+.welcome-section h1 {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.welcome-section .lead {
+  color: #4a5568;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.feature-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 15px;
+  padding: 2rem;
+  height: 100%;
+  transition: all 0.4s;
+  box-shadow: 0 8px 16px rgba(102, 126, 234, 0.3);
+}
+
+.feature-card:hover {
+  transform: scale(1.08) rotate(2deg);
+  box-shadow: 0 12px 24px rgba(102, 126, 234, 0.5);
+}
+
+.feature-card h4 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.feature-card p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+/* Rank Badges */
+.rank-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 1.4rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,.2);
+}
+
+.rank-1 {
+  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.6);
+}
+
+.rank-2 {
+  background: linear-gradient(135deg, #C0C0C0 0%, #808080 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(192, 192, 192, 0.6);
+}
+
+.rank-3 {
+  background: linear-gradient(135deg, #CD7F32 0%, #8B4513 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(205, 127, 50, 0.6);
+}
+
+/* Stats Cards */
+.stats-card {
+  border-left: 5px solid #667eea;
+  background: linear-gradient(135deg, #ffffff 0%, #f7fafc 100%);
+}
+
+/* Headings Enhancement */
+h1, h2, h3, h4, h5, h6 {
+  color: #2d3748;
+  font-weight: 700;
+}
+
+.card h1, .card h2, .card h3 {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Links Enhancement */
+a {
+  color: #667eea;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: #764ba2;
+  text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+  
+  .navbar-logo {
+    height: 30px;
+  }
+  
+  .card {
+    margin-bottom: 1rem;
+  }
+  
+  .welcome-section h1 {
+    font-size: 2rem;
+  }
+  
+  .btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Additional Enhancements */
+.container-fluid {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Alert Enhancements */
+.alert {
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,.15);
+  font-weight: 500;
+}
+
+.alert-success {
+  background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+  color: #155724;
+}
+
+.alert-danger {
+  background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+  color: #721c24;
+}
+
+.alert-info {
+  background: linear-gradient(135deg, #d1ecf1 0%, #bee5eb 100%);
+  color: #0c5460;
+}
+
+/* Loading Spinner Container */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.spinner-border {
+  color: #667eea;
+}
